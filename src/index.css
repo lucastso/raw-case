@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.all {
+  overflow-x: hidden;
+}
+
+.font-italian {
+  font-family: "Italiana", serif;
+}
+
+.font-poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.font-poppins-normal {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.font-poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
