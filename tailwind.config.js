@@ -12,6 +12,7 @@ module.exports = {
       backgroundColor: {
         custom: "#EEF5FB",
         customLighter: "#E6ECF1",
+        customBlue: "#856CFF",
       },
     },
   },

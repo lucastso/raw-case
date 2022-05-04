@@ -1,5 +1,6 @@
 import "./App.css";
 import Nav from "./components/Nav";
+import image1 from "./assets/image1.png";
 
 function App() {
   return (
@@ -45,24 +46,54 @@ function App() {
         </div>
       </div>
 
-      <div className="bg-custom h-screen flex flex-col justify-between">
+      <section className="bg-custom h-screen flex flex-col justify-between">
         <div className="h-px bg-zinc-900 w-3/4 opacity-10 mx-auto rounded-xl"></div>
-        <div className="flex justify-between items-center px-40">
-          <div className="flex flex-col justify-center items-start w-full text-zinc-900 gap-8">
-            <p>your best performance</p>
-            <div className="h-96 w-11/12 bg-red-500 shadow-xl"></div>
+
+        <section className="flex justify-between items-center px-40 w-full h-full">
+          <div className="flex flex-col justify-center items-center w-1/2 text-zinc-900">
+            <img src={image1} alt="first image"></img>
           </div>
-          <div className="flex flex-col justify-center items-center w-full">
-            <div className="h-96 w-11/12 bg-orange-500 shadow-xl"></div>
-            <p>iaeeeeeeeeeeeeeeeeeee</p>
+          <div className="flex flex-col justify-center items-start w-1/2">
+            <h1 className="font-italian font-bold text-6xl mb-6">
+              all your company content in our hands
+            </h1>
+            <p className="font-poppins-light mb-6">
+              Know who made changes, when and why. Compare changes side by side
+              with our sprint.
+            </p>
+            <div className="flex gap-4 mb-4 justify-center items-center">
+              <div className="p-1 h-1 bg-zinc-300 rounded-full"></div>
+              <div>
+                <span className="font-poppins-bold">
+                  Audience segmentation:
+                </span>
+                <span className="font-poppins-light">
+                  {" "}
+                  improve audience engagement by segmenting. Boost your
+                  conversions by targeting subsets from your contacts.
+                </span>
+              </div>
+            </div>
+            <div className="flex gap-4 justify-center items-center mb-8">
+              <p className="p-1 h-1 bg-zinc-300 rounded-full"></p>
+              <div>
+                <span className="font-poppins-bold">Contact monitoring:</span>
+                <span className="font-poppins-light">
+                  {" "}
+                  just import your contact list, segment your contacts and we'll
+                  get you a detailed real-time report of their activity.
+                </span>
+              </div>
+            </div>
+
+            <button className="flex self-end bg-customBlue py-3 px-6 rounded-full text-white font-poppins-bold">
+              Read more
+            </button>
+            <div className="border-t-2 border-zinc-300 border-dashed w-full mt-16"></div>
           </div>
-          <div className="flex flex-col justify-center items-end w-full">
-            <p>iaeeeeeeeeeeeeeeeeeee</p>
-            <div className="h-96 w-11/12 bg-yellow-500 shadow-xl"></div>
-          </div>
-        </div>
+        </section>
         <p></p>
-      </div>
+      </section>
     </section>
   );
 }
