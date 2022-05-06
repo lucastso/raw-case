@@ -3,16 +3,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        blob: "url('./src/assets/blob.svg')",
-        bigblob: "url('./src/assets/blob2.svg')",
-        fundo: "url('./src/assets/fundo.jpg')",
-        figure: "url('./src/assets/figure.svg')",
+        back: "url('./src/assets/back.svg')",
         line: "url('./src/assets/line.png')",
       },
       backgroundColor: {
-        custom: "#EEF5FB",
-        customLighter: "#E6ECF1",
-        customBlue: "#856CFF",
+        custom: "#FFF",
+        customLighter: "#FAFAFA",
+        customBlue: "#22B0FF",
       },
     },
   },
