@@ -1,10 +1,15 @@
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{html,js}",
+    "./node_modules/tw-elements/dist/js/**/*.js",
+  ],
   theme: {
     extend: {
       backgroundImage: {
         back: "url('./src/assets/back.svg')",
         line: "url('./src/assets/line.png')",
+        contact: "url('./src/assets/image3.png')",
       },
       backgroundColor: {
         custom: "#FFF",
@@ -13,5 +18,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tw-elements/dist/plugin")],
 };

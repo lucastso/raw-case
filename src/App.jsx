@@ -86,7 +86,7 @@ function App() {
             <button className="flex self-end bg-customBlue py-3 px-6 rounded-full text-white font-poppins-bold">
               Read more
             </button>
-            <div className="border-t-2 border-zinc-300 border-dashed w-full mt-16"></div>
+            <div className="border-t border-zinc-300 border-dashed w-full mt-16"></div>
           </div>
         </section>
         <div className="h-px bg-zinc-900 w-3/4 opacity-10 rounded-xl flex self-center"></div>
@@ -131,13 +131,92 @@ function App() {
             <button className="flex self-end bg-customBlue py-3 px-6 rounded-full text-white font-poppins-bold">
               Let's try
             </button>
-            <div className="border-t-2 border-zinc-300 border-dashed w-full mt-16"></div>
+            <div className="border-t border-zinc-300 border-dashed w-full mt-16"></div>
           </div>
           <div className="flex flex-col justify-center items-end w-1/2 text-zinc-900">
             <img src={image2} alt="first image" width="475"></img>
           </div>
         </section>
         <div className="h-px bg-zinc-900 w-3/4 opacity-10 rounded-xl flex self-center"></div>
+      </section>
+
+      <section className="h-screen w-full flex justify-center items-center pr-40 bg-custom">
+        <div className="w-1/2 flex flex-col justify-center items-center bg-contact bg-center bg-cover bg-no-repeat h-full">
+          <div className="px-6 py-4 rounded-lg w-2/4 bg-white">
+            <h1 className="font-poppins-bold mb-8 text-lg text-center">
+              here's our contact:
+            </h1>
+            <div className="flex justify-between items-center">
+              <div className="flex flex-col gap-1 mb-4">
+                <h1 className="font-poppins-light">e-mail:</h1>
+                <p className="font-poppins-light text-sm">example@email.com</p>
+              </div>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+
+            <div className="flex justify-between items-center">
+              <div className="flex flex-col gap-1 mb-4">
+                <h1 className="font-poppins-light">instagram:</h1>
+                <p className="font-poppins-light text-sm">@example</p>
+              </div>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+
+            <div className="flex justify-between items-center">
+              <div className="flex flex-col gap-1 mb-8">
+                <h1 className="font-poppins-light">linkedin:</h1>
+                <p className="font-poppins-light text-sm">Example Com</p>
+              </div>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+
+            <p className="font-poppins-bold text-xs">
+              * we are open to projects!
+            </p>
+          </div>
+        </div>
+
+        <div className="w-1/2 flex flex-col justify-center items-center gap-20">
+          <h1 className="text-zinc-900 text-8xl font-italian">stay in touch</h1>
+          <div className="px-6 py-4 border border-zinc-400 rounded-lg w-2/4">
+            <h1 className="font-poppins-bold mb-8 text-lg text-center">
+              all of this will be safe!
+            </h1>
+            <form className="flex flex-col gap-4 mb-8">
+              <div className="flex flex-col gap-1">
+                <label className="font-poppins-light">e-mail:</label>
+                <input
+                  type="text"
+                  className="border border-zinc-200 focus:outline-none py-2 px-4 font-poppins-light"
+                />
+              </div>
+              <div className="flex flex-col gap-1">
+                <label className="font-poppins-light">
+                  receive promotinal e-mails?{" "}
+                </label>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 align-top bg-no-repeat bg-center bg-contain float-left cursor-pointer"
+                    name="promo"
+                  />
+                  <span>yes :)</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 align-top bg-no-repeat bg-center bg-contain float-left cursor-pointer"
+                    name="promo"
+                  />
+                  <span>no :(</span>
+                </div>
+              </div>
+            </form>
+            <button className="w-full text-center bg-customBlue py-3 px-6 rounded-full text-white font-poppins-bold">
+              Send
+            </button>
+          </div>
+        </div>
       </section>
     </section>
   );
