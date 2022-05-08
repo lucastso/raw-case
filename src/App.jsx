@@ -140,7 +140,10 @@ function App() {
         <div className="h-px bg-zinc-900 w-3/4 opacity-10 rounded-xl flex self-center"></div>
       </section>
 
-      <section className="h-screen w-full flex justify-center items-center pr-40 bg-custom">
+      <section
+        className="h-screen w-full flex justify-center items-center pr-40 bg-custom"
+        id="contact"
+      >
         <div className="w-1/2 flex flex-col justify-center items-center bg-contact bg-center bg-cover bg-no-repeat h-full">
           <div className="px-6 py-4 rounded-lg w-2/4 bg-white">
             <h1 className="font-poppins-bold mb-8 text-lg text-center">

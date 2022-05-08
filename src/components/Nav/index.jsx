@@ -1,6 +1,7 @@
 import React from "react";
 import hamg from "../../assets/hamb.svg";
 import logo from "../../assets/logo.svg";
+import { Link } from "react-scroll";
 
 function Nav() {
   return (
@@ -13,12 +14,15 @@ function Nav() {
         <a href="#" className="cursor-pointer font-poppins-light">
           Services
         </a>
-        <a
-          href="#"
+        <Link
+          to="contact"
           className="cursor-pointer py-3 px-6 bg-customBlue rounded-full text-white font-poppins-bold"
+          smooth={true}
+          offset={50}
+          duration={1000}
         >
           Contact
-        </a>
+        </Link>
       </div>
       <img
         src={hamg}
