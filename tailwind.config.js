@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -16,6 +18,10 @@ module.exports = {
         customLighter: "#FAFAFA",
         customBlue: "#22B0FF",
       },
+    },
+    screens: {
+      xs: "360px",
+      ...defaultTheme.screens,
     },
   },
   plugins: [require("tw-elements/dist/plugin")],
