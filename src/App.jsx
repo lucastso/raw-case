@@ -109,7 +109,7 @@ function App() {
       <section className="bg-custom xs:h-auto lg:h-screen flex flex-col justify-between">
         <div className="h-px bg-zinc-900 w-3/4 opacity-10 mx-auto rounded-xl xs:hidden"></div>
 
-        <section className="flex xs:flex-col-reverse lg:flex-row justify-between items-center xs:px-4 lg:px-40 w-full bg-customLighter">
+        <section className="flex xs:flex-col-reverse lg:flex-row justify-between items-center xs:px-4 lg:px-40 w-full bg-customLighter xs:h-auto lg:h-screen">
           <div className="flex flex-col justify-center items-start xs:w-full lg:w-1/2">
             <h1 className="font-italian font-bold xs:text-4xl lg:text-6xl mb-10">
               building digital products, brands & experiences

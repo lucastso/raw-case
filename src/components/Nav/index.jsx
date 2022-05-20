@@ -31,7 +31,9 @@ function Nav() {
           Contact
         </Link>
       </div>
-      <Hamb />
+      <div className="xs:block lg:hidden">
+        <Hamb />
+      </div>
     </div>
   );
 }
